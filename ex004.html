@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body{
+            background-color: bisque;
+            color: brown;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    
+    <title>Primeira página</title>
+
+</head>
+
+<body>
+    
+    <h1>Olá, mundo!</h1>
+    <p>Página de teste</p>
+
+    <script>
+        //Exercício 04
+
+        //s.length - indica quantos caracteres a string tem
+        //s.toUpperCase() - transforma tudo para maiúsculas
+        //s.toLowerCase() - transforma tudo para minúsculas
+        
+
+        var nome = prompt('Digite seu nome')
+
+        alert(`Seu nome possui ${nome.length} letras`)
+        
+        document.write(`Olá <strong>${nome}</strong>! Posso por todas as letras maiúsculas do seu nome: ${nome.toUpperCase()}<br>`)
+        
+        document.write(`Ou posso mostrar todas as letras em minúsculo: ${nome.toLowerCase()}`)
+    
+        //document.write - escreve no próprio documento
+
+        /*
+        Conversão de números
+        
+        n.toFixed(2) - para aumentar o número de casas decimais Ex.: 1545.5 para 1545.50
+        
+        n.toFixed(2).replace('.',',') - troca o ponto pela vírgula
+        
+        n.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) - converte para moeda, nesse caso, o real, mudando o BRL para USD se torna dólar, EUR para euro etc
+        */
+
+
+
+    </script>
+
+</body>
+</html>

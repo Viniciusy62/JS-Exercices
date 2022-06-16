@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body{
+            background-color: bisque;
+            color: brown;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    
+    <title>Primeira página</title>
+
+</head>
+
+<body>
+    
+    <h1>Olá, mundo!</h1>
+    <p>Página de teste</p>
+
+    <script>
+        //Exercício 03
+
+        var n1 = Number.parseInt(window.prompt('Digite um número inteiro'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número inteiro'))
+
+        /*
+        Converter uma string para número
+        
+        Number.parseInt(n) - para números inteiros
+        Number.parseFloat(n) - para números reais 5.3, 5.5 etc
+        Number(n) - O JS decide qual o tipo de número
+        */
+
+        var n3 = Number(window.prompt('Digite um número com decimal Ex(2.5)'))
+        var n4 = Number(window.prompt('Digite ainda mais outro número com decimal Ex(3.4)'))
+
+        var soma = n1 + n2 + n3 + n4
+        var soma_n1n2 = n1 + n2
+
+        window.alert('A soma desses valores é ' + soma)
+       
+
+        /*
+        Converter algo para uma String
+        
+        String(n)
+        n.toString() - Onde n é o que eu quero converter
+        */
+
+        window.alert(`A soma dos valores ${n1} e ${n2} é ${soma_n1n2}`)
+
+        /* ${s} - recebe o nome de placeholder
+        usado entre crase `Eu estou aprendendo ${s}` (T emplate strings) ele faz a função do + para concatenar as strings */
+      
+        </script>
+
+</body>
+</html>
