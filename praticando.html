@@ -48,12 +48,19 @@ var numero = 359.5
 var resultado = document.write(`Seu nome é ${nome} e seu sobrenome é ${sobrenome} e o preço é ${numero.toLocaleString('pt-BR', {style:'currency', currency: 'USD'})}`)
 */
 
-box.addEventListener('mousein', passarMouse)
+box.addEventListener('mouseenter', passarMouse)
+box.addEventListener('mouseout', mouseSaiu)
 
 function passarMouse(){
-    let box = document.getElementById('box')
+    let entrar = document.getElementById('box')
     box.innerText = 'Mouse na área'
     box.style.background = 'red'
+}
+
+function mouseSaiu(){
+    let sair = document.getElementById('box')
+    box.innerText = 'Mouse saiu da box'
+    box.style.background = 'black'
 }
 </script>
 
