@@ -33,6 +33,13 @@
    
     <div id="area" onclick="clicar()" onmouseenter="entrar()">Eventos DOM</div> <!--Forma de acionar o evento diretamente  no HTML-->
     
+
+    <h1>Somando Valores</h1>
+
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="resultado">Resultado:</div>
     
     <script>
         //Exercício 08
@@ -43,10 +50,14 @@
 
        modelo:
        function ação(parametroOpcional){
-
+        variavel nome = localizaçãodoelemento
+        nomedavariavel.tipodaalteração = 'alteração' 
        }
+
+       variavel.addEventListener('ação', functionname)
        */
 
+       /*ATIVANDO EVENTOS COM MOUSE
     area.addEventListener('mouseout', sair) //forma de acionar os eventos dentro do JS (Recomendado)
 
      function clicar(){
@@ -65,7 +76,24 @@
         area.innerText = 'Mouse Saiu'
         area.style.background = 'green'
     }
+    */
 
+    //SOMANDO NÚMEROS
+    function somar(){
+        var textnumero1 = document.getElementById('n1')
+        var textnumero2 = document.querySelector('input#n2')
+
+        var numero1 = Number(textnumero1.value)
+        var numero2 = Number (textnumero2.value)
+
+        var resultado = document.getElementById('resultado')
+
+        var soma = numero1 + numero2
+        
+        resultado.innerHTML = `A soma entre ${numero1} e ${numero2} é: <strong>${soma}</strong>`
+
+        console.log(somar)
+    }
     </script>
 
 </body>

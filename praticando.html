@@ -48,7 +48,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
+           
         }
 
     </style>
@@ -59,12 +59,12 @@
 <body>
     <h1>Praticando</h1>
 
-    <div id="box">
+    <div id="box"></div>
         <div class="minibox"></div>
         <div class="minibox"></div>
         <div class="minibox"></div>
         <div class="minibox"></div>
-    </div>
+    
 
 <script>
 //var n1 = Number(prompt('Digite um número'))
@@ -103,14 +103,14 @@ minibox.addEventListener('mouseenter', mudarCor)
 
 function corCaixa(){
     let caixona = document.getElementById('box')
-    caixona.style.background = 'blue'
+    caixona.style.background = 'red'
     
 }
 
 function mudarCor(){
-    let minibox = document.getElementsByClassName('minibox')[1]
-    minibox.style.background = 'red'
-    minibox.innerText = 'Aqui!'
+    let caixinha = document.getElementsByClassName('minibox')[0]
+    caixinha.style.background = 'red'
+    caixinha.innerText = 'Aqui!'
 }
 
 var titulo = window.document.getElementsByTagName('h1')[0]
