@@ -19,18 +19,24 @@
 </head>
 
 <body>
-    <h1>Criando condições</h1>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="" id="txtvel"> km/h <input type="button" value="Verificar" onclick="calcular()">
+    <br>
+    <div id="resultado"></div>
     
-    <div>
-        <h2>Escolha uma opção e veja o resultado</h2>
-        <select name="" id="">
-            <option value="Onix">Onix</option>
-            <option value="Siena">Siena</option>
-            <option value="Gol">Gol</option>
-            <option value="Fusca">Fusca</option>
-            <option value="Camaro">Camaro</option>
-        </select>
-    </div>
+    <script>
+        function calcular(){
+            let txtvelocidade = document.querySelector('input#txtvel')
+            let resultado = document.querySelector('div#resultado')
+            let velocidade = Number(txtvelocidade.value)
+            
+            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${velocidade} km/h</strong>.</p>`
+            if(velocidade > 60){
+                resultado.innerHTML += 'Você está <strong>multado</strong> por excesso de velocidade!'
+            }
+            resultado.innerHTML += '<p>Dirija com responsabilidade!</p>'
+        }
+    </script>    
 
     
     <script>
