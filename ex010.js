@@ -10,7 +10,7 @@ if (idade < 16) {
     }
 */
 
-/*Exercício 2*/
+/*Exercício 2
 
 //var agora = new Date()
 //var hora = agora.getHours() (Hora de onde está rodando o script)
@@ -26,3 +26,4 @@ if (hora > 0 && hora < 12) {
 } else {
     console.log('Digite um valor válido de horas')
 }
+*/
